@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import json
 
 
+
 from sklearn.cross_validation import KFold
 from sklearn.preprocessing import StandardScaler
 from sklearn.cross_validation import train_test_split
@@ -18,6 +19,8 @@ from sklearn.ensemble import RandomForestClassifier as RF
 #%%
 url = 'https://raw.githubusercontent.com/EricChiang/churn/master/data/churn.csv'
 churn_df = pd.read_csv(url)
+
+
 #%%
 col_names = churn_df.columns.tolist()
 print 'This is the list of columns\n' 
